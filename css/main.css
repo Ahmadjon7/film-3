@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+  text-decoration: none; 
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(Auto-fill, minmax(320px, 1fr));
+    gap: 10px;
+}
+/* heade style  */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background:#7037C7;
+    color:#fff;
+}
+/* main style  */
+main{
+    padding-top: 80px;
+}
+.loader__title{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: ‘Arial Narrow’, sans-serif;
+    font-weight: 300;
+  }
+  
+  span {
+    font-size: 34px;
+    position: relative;
+    top: 0.63em;  
+    display: inline-block;
+    text-transform: uppercase;  
+    opacity: 0;
+    transform: rotateX(-90deg);
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-position: right center;
+
+  }
+  .fond__title{
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-position: right center;
+
+  }
+  .let1 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .let2 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.6s;
+  }
+  
+  .let3 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.7s;
+  }
+  
+  .let4 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.8s;
+  
+  }
+  
+  .let5 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 0.9s;
+  }
+  
+  .let6 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  .let7 {
+    animation: drop 0.5s ease-in-out infinite;
+    animation-delay: 1.1s;
+  }
+  
+  @keyframes drop {
+      10% {
+          opacity: 0.5;
+      }
+      20% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      80% {
+          opacity: 1;
+          top: 3.78em;
+          transform: rotateX(-360deg);
+      }
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          top: 6.94em
+      }
+  }
+  .btn__1{
+    background:linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+    color:aliceblue;
+    transition: all 0.3s ease-in-out;
+    border:none;
+    border-radius:5px;
+    padding:5px 6px;
+
+  }
+  .btn__1:hover{
+    color:#fff;
+    background-position: right center;
+  }
+  .btn__1:active{
+    color:#fff;
+    opacity: 0.7;
+  }
